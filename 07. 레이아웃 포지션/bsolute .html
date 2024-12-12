@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+*{padding: 0; margin: 0;}
+    .list {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid#777;
+            position: relative; /* 기준 */
+            }
+
+      p {height: 50px ;}
+
+      .inner1 {background-color: aqua;}
+      .inner2 {background-color: yellow;
+               position: absolute;
+               left: 10px;          
+               top: 10px; /* 규칙1. left/right 중 1개, top/bottom 중 1개를 이용해서 위치 조정 */
+               }          /* 규칙2. 기준이 될 부모 박스에 relative를 넣으면 됨 */
+                          /* 부모에 relative가 있는 태그 기준으로 z방향(대각선)으로 움직임. 없으면 body기준으로 움직임 */
+      .inner3 {background-color: green}
+
+</style>
+
+</head>
+<body>
+    
+    <div class="list">
+        <div class="content">
+            <p class="inner1">
+                포지션
+            </p>
+            <p class="inner2">
+                포지션
+            </p>
+            <p class="inner3">
+                포지션
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>

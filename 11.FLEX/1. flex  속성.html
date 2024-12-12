@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellow; padding: 10px;}
+        .box >.item {background-color: green; 
+    /*박스 크기  */ width: 50px; height: 50px;}
+
+            
+        .container {display: flex;} /* 컨테이너 박스가 블럭처럼 배치 됩니다. flex or inline-flex */
+    </style>
+
+</head>
+<body>
+    
+    <!--flex는 바깥을 감싸는 컨테이너, 배치되는 요소 item으로 구분이 됩니다.
+        container에 적용하는 속성이 있고, item에 적용하는 속성이 있습니다. -->
+    
+
+        <div class="container box">
+            <div class="item">hello</div>
+            <div class="item">world</div>
+            <div class="item">flex</div>
+        </div>
+
+        <div class="container box">
+            <div class="item">hello</div>
+            <div class="item">world</div>
+            <div class="item">flex</div>
+        </div>
+        
+        <hr>
+
+        <h3>flex-direction(아이뎀들의 배치 축방향 가로or세로)</h3>
+       
+        <style>
+            .container2 {display: flex; 
+                        flex-direction: row-reverse;/* 기본값 row 달라지는거 없음 */}
+        </style>
+
+        <div class="container2 box">
+            <div class="item">hello</div>
+            <div class="item">world</div>
+            <div class="item">flex</div>
+        </div>
+
+
+        <hr>
+        
+        <h3>flex-wrap (더 이상 공간이 없을때 컨테이너의 줄바꿈 설정)</h3>
+       
+        <style>
+            .container3 {display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;/* 기본값 nowrap 줄바꿈 하지 않음 */}                       
+
+        </style>
+
+        <div class="container3 box">
+            <div class="item">hello</div>
+            <div class="item">world</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+            <div class="item">flex</div>
+        </div>
+
+
+        <hr>
+        
+        <h3>flex-flow: direction, wrap</h3>
+        
+        <style>
+            .container4 {display: flex;
+                        flex-flow: row wrap ;}                       
+        /* direction과 wrap을 한번에 사용할 수 있다.*/
+        </style>
+
+        <div class="container4 box">
+            <div class="item">hello</div>
+            <div class="item">world</div>
+            <div class="item">flex</div>
+        </div>
+
+        <hr>
+
+        
+
+</body>
+</html>

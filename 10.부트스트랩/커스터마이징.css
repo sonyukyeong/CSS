@@ -1,0 +1,109 @@
+/* 헤더 디자인 */
+/* 개발자 도구로 조정한 다음에 덮기 */
+/* 방법1. 동일한 클래스명 선언 후 동일한 속성 지정*/
+.navbar-brand{padding: 10px 20px;}
+.navbar-inverse {background-color: #263238;
+                border-color: #263238;}
+/* 둥근 윤곽 조절*/
+.navbar {border-radius: 0; margin: 0;}
+/* 개발자 도구에서 그냥 찍으면 호버가 들어간게 보이지 않으니 개발자 도구로 누르고 밑에 창 위에 옆에 :hov(콜론 가상선택자) 체크하면 보임 */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {background-color: #485;}
+
+/* 다른 영역에도 영향을 줄거임 */
+.form-control{border-radius: 0;}
+.btn {border-radius: 0;}
+.form-control:focus {border-color: #e3e3e3; box-shadow: none;}
+
+header {position: fixed; /* 나중에 쓴 포지션이 뒤로 밀림 / 1fixed는 뒤로 숨어서*/
+        left: 0;
+        top: 0;
+        z-index: 10; /* 그래서 꺼내줌 */
+        width: 100%;}
+
+
+/* 슬라이드 영역 */
+.main-article {margin-top: 50px;}/* 1헤더의 높이 만큼 마진을 줘서 fixed 뒤로 말려들어가게 설정 */
+.carousel-control.right {background-image: none;}
+.carousel-control.left {background-image: none;}
+
+/* 본문 영역 */
+.prod-list {border: 1px solid#777;}
+.prod-list > li[class*=col-] {padding: 5px;}  /* *표시는 col-이 class속성에 포함된 li태그란 뜻 */
+.prod-list .prod-link {border: 1px solid #777; 
+                        display: block;
+                        text-align: center;
+                        position: relative;}/* a 영역 안에서 움직이기 위해 relative arrow에 absolute  */
+.prod-list .prod-link > .arrow {position: absolute; /* 이미지 안에서 위치를 바꾸기 위해 사용(ex.상세보기 버튼) */
+                                left: 10px;
+                                bottom: 10px;
+                                background-color: #e3e3e3;
+                                color: #fff;
+                                padding: 10px 20px;} 
+.prod-list .prod-link > .hover {background-color: #50a0ff;
+                                opacity: 0; /* 투명도 1이 기본값, 1부터 보임 / >랑 겹쳐있어서 위에 있는 상세보기만 보이는거임*/
+                                }
+.prod-link:hover{border: 1px solid #50a0ff;} /* 마우스 올리면 상자? 상자 테두리? 색깔이 변함 */
+                                
+.prod-link:hover > .hover {opacity: 1;} /* 투명도 1을 줘서 마우스를 위로 올리면 상세보기가 보임 */
+
+.main-section {margin-top: 50px;} /* 내용이 너무 딱 붙어 있는거 같아서 여백줌 */
+
+
+
+        /* 과제 */
+.prod-list-inner > img {width: 100%; /* 이미지 크기를 100% 주면 부모님 크기에 맞춰 키운다는 의미이고, 화면을 줄이고 늘리고 할때 이미지 크기가 변하니깐 줌, 안줘도 원하는대로 나오면 굳이 안줘도 됨 */} 
+
+.prod-content {overflow:hidden; padding: 15px 0px 15px 0px;/* 글씨박스 위아래,좌우 여백 */}
+.prod-content > .info {float: left;} /* 글씨 배치 */
+.prod-content > .price {float: right;}
+
+.prod-color {opacity: 0; margin-top: -45px; 
+                transition: all 0.5s ease-in-out;} /* transition은 마우스 올렸을때의 효과를 주는 것. hover말고 꼭 원본에 넣기!  */
+.prod-color > ul {overflow: hidden;}
+.prod-color > ul > li {float: left; width: 50px;}
+/* 마우스 올렸을때 변화 */
+.prod-list-inner:hover > .prod-color {opacity: 1;} 
+
+
+
+        /* 실습 */
+.a {min-height: 350px/* 최소 너비 /350이하로는 줄지 않고, 내용이 많으면 가변된다. */ /*창 크기가 줄어들때 대비 */;}
+.a > .info {font-size: 24px; padding: 10px 0;}
+.a > .price {
+        font-size: 30px;
+        font-weight: 600; /* 글씨 두껍게 */
+        border-top:1px solid #ddd; 
+        border-bottom:1px solid #ddd;
+        padding: 10px 0;}
+.a > .time {color: #888; padding: 10px 0;}
+
+.b {margin-top: 20px;} /* 2. .a와 .b의 사이 간격을 줌 */
+.b > .money {overflow: hidden;}
+.b > .money > .left {
+                float: left; 
+                font-size: 18px; 
+                line-height: 40px;/* 줄간격 조정 line-height:50 height:50 주면 가운데로 가는데 높이가 이미 지정되어있어서 라인만 좀 조정함 */
+                }
+.b > .money > .right {float: right; font-size: 30px; font-weight: 600;}
+
+.b > .order {overflow: hidden;}
+.b > .order > .left {
+                float: left;
+                width: 50%;/* 버튼 간격 각각 반반 차지 */
+                /* 버튼디자인 */
+                border: 1px solid#e3e3e3;
+                background-color: #fff;
+                padding: 10px 0;
+                 /* 직접하거나 부트스트랩 참고*/
+                }
+.b > .order > .right {
+                float: right; 
+                width: 50%;/* 버튼 간격 각각 반반 차지 */
+                /* 버튼디자인 */      
+                border: 1px solid#e3e3e3;
+                background-color: #2b6ad0;
+                padding: 10px 0;
+                color: #fff;
+                 /* 직접하거나 부트스트랩 참고*/
+                }

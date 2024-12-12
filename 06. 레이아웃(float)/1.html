@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap { border: 1px solid#777;
+                width:800px;
+                margin: 0 auto; }
+        
+        .wrap .box {float: left;
+                    border: 1px solid #777;
+                    width: 16.6666%;
+                    box-sizing: border-box;} 
+        /* float 목적: 글과 사진을 같이 
+           부모상자가 자식을 담지 못하는 현상 발생하니,
+           2가지 문법 중 1가지 사용 (의문ㄴㄴ 외우기)                            
+           1.부모님태그에 가상선택자 방식
+           2.부모태그에 overflow:hidden */
+        /*1번 .wrap:after {content: ""; display: block; clear: both;} */
+        /*2번 .wrap { border: 1px solid#777; 
+                      width:800px; 
+                      margin: 0 auto; 
+                      overflow:hidden;} */
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+    </div>
+
+
+    <style>
+        .list {border:1px solid#777;
+               width: 50%;
+               margin: 0 auto;
+               overflow: hidden;}
+        
+        .list > li {float: left;
+                    width: 50%;}
+    </style>
+
+<hr>
+
+    <ul class="list">
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+        <li>상자</li>
+    </ul>
+
+
+<hr>
+
+<style>
+    .contene {border: 1px solid#777;
+              width: 50%;
+              margin: 0 auto;}
+    
+    .left {float: left}
+    .right {float: right;}
+</style>
+
+<div class="content">
+    <div class="left">왼쪽상자</div>
+    <div class="right">오른쪽상자</div>
+</div>
+
+
+
+</body>
+</html>

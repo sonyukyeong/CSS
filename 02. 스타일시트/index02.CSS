@@ -1,0 +1,24 @@
+/* 디자인을 시작할 때, 여백을 없애거나 태그의 기본 속성들을 지울 때 사용합니다. */
+* { list-style: none;}
+
+
+b{color: blue;}
+
+strong{color: red;}
+small{color: red;}
+/* 색깔이 똑같은 건 묶어도 됨 */
+strong, small{color: red;}
+
+
+#고유함 {color: yellow;}
+#다르게 {color: green;}
+.b1{color: aqua;}
+.b2{color: violet;}
+
+
+/* 띄어쓰기는 abox에 있는 모든 p 의 스타일을 바꿈 */
+.abox p {color: brown;}
+/* >는 bbox에 바로 아래에 있는 p의 스타일을 바꿈 */
+.bbox > p {color: blueviolet;}
+
+input[type=date], input[type=text] {color: red;}

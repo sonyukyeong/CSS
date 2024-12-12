@@ -1,0 +1,36 @@
+*{padding: 0; margin: 0;}
+ul li{list-style: none;}
+
+header {position: sticky; top: 0;}
+
+.top {text-align: center; padding: 20px 0; position: relative; background-color: white;}
+.top > h1 {position: center; margin: 20px 0;}
+
+.menu {text-align: center; padding: 20px 0;}
+.menu > ul > li {display: inline-block; padding: 20px 30px;}
+.menu > ul > li > a {display: block; text-decoration: none; color: black;}
+
+.social {position: absolute; top: 10px; left: 10px;}
+
+
+.login {position: absolute; top: 10px; right: 10px;}
+.login > .right > li {display:inline;}
+.login > .right > li > a {  display:inline;
+                            padding: 10px;
+                            text-decoration: none; 
+                            color: black;                            
+                            font-size: 12px; }
+
+.middle {height: 500px; 
+        border-top: 3px solid red;
+        background-image: url(images/main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;}
+.middle > .a {text-align: center; font-size: 50px; color: white; padding-top: 100px;}
+.middle > .b {text-align: center; font-size: 30px; color: white; padding-top: 50px;}
+
+
+.bottom {text-align: center;}
+.bottom > h2 {font-size: 14px; border-bottom: 3px dashed #ddd;}
+.bottom > ul > li {display: inline-block; padding: 3%;}

@@ -1,0 +1,53 @@
+* {padding: 0; margin: 0;}
+ul, li {list-style: none;}
+img {height: auto; max-width: 100%;}
+a {text-decoration: none; color: #999999;}
+
+
+header {border-top: 3px solid #00d344;}
+header .wrap {border-bottom: 1px solid #ddd;}
+header .top {width: 1008px; margin: 0 auto; overflow: hidden;}
+header .top .top_left {float: left; padding: 11px 7px; font-size: 13px;}
+header .top .top_right {float: right;}
+
+.top_right ul li {display: inline; border-left:1px solid #999999;}
+.top_right ul li a {display: inline-block; padding: 11px 7px;}
+.top_right ul li a span {font-size: 13px;}
+
+header .mid {width: 1008px; margin: 0 auto; overflow: hidden;}
+header .mid > .left {float: left;}
+header .mid > .right {float: right; margin-top: 10px;}
+header .mid > fieldset {
+    margin: 36px 0 0 11px;
+    width: 330px;
+    height: 40px;
+    background: url('img_melon/melon_search.png') no-repeat;
+    border: none;
+    overflow: hidden;
+}
+header .mid > fieldset > input[type=text] {
+    float: left;
+    margin: 7px 0 0 18px;
+    width: 260px;
+    height: 25px;
+    border: none;
+}
+header .mid > fieldset > button {
+    float: right;
+    background: url('img_melon/melon_btn.png') no-repeat;
+    width: 45px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+header .bottom {overflow: hidden; width: 1008px; margin: 0 auto;}
+header .bottom > .main-gnb {float: left;}
+header .bottom > .main-gnb > li {display: inline-block;}
+header .bottom > .main-gnb > li > a {display: block; font-size: 15px; padding: 7px 10px; color: #000; font-weight: 900;}
+header .bottom > .main-gnb > li > a:hover {color: #00d344;}
+header .bottom > .sub-gnb {float: right;}
+header .bottom > .sub-gnb > li > a {display: block; font-size: 15px; padding: 7px 10px; color: #000; font-weight: 900;}
+
+
+

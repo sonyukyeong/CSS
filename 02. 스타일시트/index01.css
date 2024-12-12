@@ -1,0 +1,3 @@
+/* CSS는 중복으로 넣어도 되지만, 마지막 속성이 적용 된다*/
+p {color:aqua}
+p {color:red}  

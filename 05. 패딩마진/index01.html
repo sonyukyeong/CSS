@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            body {background-image: url('img/bg_grid.jpg');}
+
+            p  {width: 600px;
+                height: 100px;
+                border: 1px solid#777;
+                background-color: aqua;
+                padding: 10px 20px 30px; /* 1개 들어가면 전체(위아래좌우)
+                                            2개 들어가면 위아래, 좌우
+                                            3개 들어가면 위, 좌우, 아래 
+                                            4개 들어가면 시계 방향(위, 우, 아래, 좌) 적용됨 */
+                /* box-sizing: content-box */
+                box-sizing: border-box;}
+
+
+            
+    </style>
+
+</head>
+<body>
+    
+    <p> 
+        패딩이란,<br>
+        윤관 기준 안쪽 여백입니다.<br>
+        박스크기는 width + 패딩양옆 + border(윤곽)로 결정 됩니다.<br>
+        패딩은 겹치지 않습니다.
+    </p>
+
+</body>
+</html>

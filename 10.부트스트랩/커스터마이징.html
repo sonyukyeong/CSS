@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css적용 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 제이쿼리 링크 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- 부트스트랩 js 적용 -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 부트스트랩 쓰기 위해 이 3가지는 필수 -->
+
+
+    <!-- 커스텀 CSS -->
+     <link rel="stylesheet" href="리셋.css">
+     <link rel="stylesheet" href="커스터마이징.css">
+
+
+</head>
+<body>
+    
+     <header>     
+        
+      <!-- W3school에서 퍼온거 -->
+<nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="로고" width="30">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">전체</a></li>
+          <li><a href="#">게시글</a></li>
+          <li><a href="#">이미지</a></li>
+          <li><a href="#">포트폴리오</a></li>         
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right"><!-- 오른쪽 배치 -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <form class="navbar-form navbar-left" action="##">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="검색">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+         </li>
+
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> 회원가입</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </header>
+
+    <article>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/1.jpg" alt="Los Angeles"> <!-- 사진 사이즈가 일정해야됨 -->
+              </div>
+          
+              <div class="item">
+                <img src="img/2.jpg" alt="Chicago">
+              </div>
+          
+              <div class="item">
+                <img src="img/3.jpg" alt="New York">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </article>
+
+<!-- 그리드(반응형 영역(본문)) -->
+    <section class="main-section">
+        <div class="container">
+            <div class="row">
+
+                <h3>오늘의 발견(쿠팡이 엄선한 상품)</h3>
+
+                <ul class="col-xs-12 prod-list"><!-- border(전체박스) -->
+                    <li class="col-sm-6"><!--카드 --><!--상자 사이즈, 갯수 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box1.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-6"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box2.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box3.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box4.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box5.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box6.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-6"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box7.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box8.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3"><!--카드 -->
+                        <a href="#" class="prod-link"><!-- 클릭하면 어디로 이동해야하니깐 a로 감싸주기 -->
+                            <img src="img/box9.jpg" alt="이미지1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<hr/>
+
+<!-- 과제 -->
+<section>
+  <div class="container">
+    <h2>상품그리드</h2>
+    <hr>
+    <div class="row"> <!-- container 안에 반드시 row -->
+      <div class="col-md-3 col-sm-6 col-xs-12"><!-- 본문 -->
+        <div class="prod-list-inner"><!-- 임지,글씨 포함된 카드 -->
+          <img src="img/prod1.jpg" alt="상품">
+          <div class="prod-content"><!-- 글씨 박스 -->
+            <ul class="info">
+              <li>나이키 에어맥스
+                <i class="glyphicon glyphicon-heart" style="color: red;"></i><!-- 작은 아이콘 (부트스트랩 참고해서 넣기) -->
+                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+              </li>
+              <li>new 신발 라이프</li>
+              <li>8칼라</li>
+            </ul>
+              <strong class="price">199,000</strong>
+          </div>
+
+          <div class="prod-color"><!--컬러 선택란 -->
+            <ul>
+              <li><img src="img/color1.jpg" alt=""></li>
+              <li><img src="img/color2.jpg" alt=""></li>
+              <li><img src="img/color3.jpg" alt=""></li>
+              <li><img src="img/color4.jpg" alt=""></li>
+              <li><img src="img/color5.jpg" alt=""></li>
+            </ul>
+          </div>                  
+        </div>
+
+        <div class="prod-list-inner"><!-- 임지,글씨 포함된 카드 -->
+          <img src="img/prod1.jpg" alt="상품">
+          <div class="prod-content"><!-- 글씨 박스 -->
+            <ul class="info">
+              <li>나이키 에어맥스
+                <i class="glyphicon glyphicon-heart" style="color: red;"></i><!-- 작은 아이콘 (부트스트랩 참고해서 넣기) -->
+                <i class="glyphicon glyphicon-shopping-cart" style="color: green;"></i>
+              </li>
+              <li>new 신발 라이프</li>
+              <li>8칼라</li>
+            </ul>
+              <strong class="price">199,000</strong>
+          </div>
+
+          <div class="prod-color"><!--컬러 선택란 -->
+            <ul>
+              <li><img src="img/color1.jpg" alt=""></li>
+              <li><img src="img/color2.jpg" alt=""></li>
+              <li><img src="img/color3.jpg" alt=""></li>
+              <li><img src="img/color4.jpg" alt=""></li>
+              <li><img src="img/color5.jpg" alt=""></li>
+            </ul>
+          </div>                  
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 실습 -->
+<section>
+  <div class="container">
+    <h2>상세보기
+    <small>(쿠팡 예제)</small>
+    </h2><hr>
+
+    <div class="row">
+        <div class="col-md-6 col-xs-12"><!-- row 안에서 반(6) 1개 -->
+            <img src="img/detail.jpg" alt="">
+    </div>
+
+        <div class="col-md-6"><!-- row 안에서 반(6) 1개 / 반반 총 2개 -->
+          <ul class="a">
+              <li class="info">[게릴라특가] 30일체험가능! 벨라페이스 3컬러 LED마스크 눈마사지 겸용/
+              4단계 시간조절/피부홈케어 +사은품까지!</li>      
+              <li class="price">135,000원</li>
+              <li class="time">무료배송<br>
+              상품별배송 ㅣ 택배배송 ㅣ당일출고, 
+              12시 이전 결제 건까지 해당 (주말, 공휴일 제외)</li>
+          </ul>
+
+          <div class="b">
+            <div class="money">
+              <p class="left">총 상품금액</p>
+              <p class="right">0원</p>              
+          </div>
+
+            <div class="order">
+              <button type="button" class="left">장바구니</button><!-- type="button" 설정해야 하나봄 -->
+              <button type="button" class="right">구매하기</button>
+
+          </div>
+        </div>
+  </div> 
+
+</section>
+</body>
+</html>

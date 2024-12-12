@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* 이미지 크기 설정 */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* .prod-list-inner에 display: flex 적용 */
+  .prod-list-inner {
+    display: flex; /* 자식 요소를 가로로 배치 */
+    flex-direction: column; /* 기본 방향은 세로, 나중에 필요시 가로로 변경 가능 */
+  }
+  
+  /* prod-content를 왼쪽 정렬, 가격을 오른쪽 정렬 */
+  .prod-content {
+    display: flex; /* 가로로 배치 */
+    justify-content: space-between; /* 왼쪽, 오른쪽으로 배치 */
+    padding: 15px 0px;
+  }
+  
+  .prod-color {
+    opacity: 0;
+    margin-top: -45px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .prod-color > ul {
+    display: flex; /* 색상 아이템들을 가로로 배치 */
+    padding: 0;
+    margin: 0;
+    clear: both; /* float된 요소들을 정리 */
+  }
+  
+  .prod-color > ul > li {
+    width: 50px;
+    margin-right: 5px; /* 이미지 간 간격 조정 */
+  }
+  
+  .prod-list-inner:hover > .prod-color {
+    opacity: 1;
+  }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .box {background-color: yellow; padding: 10px;}
+    .box >.item {background-color: green; 
+/*박스 크기  */ width: 50px;} /* align-items: stretch 적용할때 여기에는 높이 지정이 없어야됨(크기 고정x). 높이 지정이 없으면(크기 고정x) 기본적으로 잡아당기는 스트레치가 됨 */
+    
+
+    .container {display: flex; /* 컨테이너 박스가 블럭처럼 배치 됩니다. flex or inline-flex */
+                height: 300px;
+                align-items: baseline;/* 상자 높이가 지정되어있어야함 지금은 다이렉션을 따로 지정하지않아 기본값 row(가로)로 들어가 있어서 align-items은 colum(세로)축으로 적용 */}
+    
+    </style>
+
+</head>
+<body>
+
+
+    <h3>align-items 반대축정렬(한줄일때)</h3>
+        
+
+        <div class="container box">
+            <div class="item">hello</div>
+            <div class="item">world</div>
+            <div class="item">flex</div>        
+        </div>
+
+        <hr>
+
+        <h3>align-content 교차축정렬(두줄 이상일때)</h3>
+        <style>
+
+    .container2 {display: flex;
+                flex-wrap: wrap;/* 줄 설정 */
+                height: 300px;
+                /* align-content: flex-start */
+                /* align-content:flex-end  */
+                /* align-content:center */
+                /* align-content: space-between 3줄 이상일때 확인가능 */
+                align-content:space-around;
+                }
+
+        </style>
+
+        <div class="container2 box">
+            <div class="item">hello</div>
+            <div class="item">world</div>
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+            <div class="item">flex</div>        
+        </div>
+        
+
+</body>
+</html>

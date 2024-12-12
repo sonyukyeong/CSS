@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0; }
+
+        .a {overflow: hidden;
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            }
+
+        .a > .img {
+                float: left;
+                width: 50%;                 
+                }
+
+        .a > .b {
+                float: right;
+                border: 1px solid black;
+                width: 50%;
+                              
+                }
+
+        .a > .b > .c {overflow: hidden;
+                      border: 1px solid black;
+                      }
+        .a > .b > .c > .left {float: left;}
+        .a > .b > .c > .right {float: right;}
+
+        .a > .b > .c > .d {overflow: hidden;}
+        .a > .b > .c > .d > .left {float: left; width: 50%;}                                   
+        .a > .b > .c > .d > .right {float: right; width: 50%;}                                   
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="a">
+
+        <div class="img">사진</div>
+
+        <div class="b">
+                <p>제목:어쩌구저쩌구</p>
+                <p>내용:어쩌구저쩌구</p>       
+
+            <div class="c">
+                <p class="left">가격</p>
+                <p class="right">10000원</p>
+            </div>
+
+            <div class="d">
+                <button class="left">장바구니</button>
+                <button class="right">구매하기</button>
+            </div>  
+        </div>      
+    </div>
+
+
+
+</body>
+</html>

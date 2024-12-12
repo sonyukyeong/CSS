@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- 외부스타일을 넣을 시 스타일시트 링크는 반드시 head 영역에 넣어주기 -->
+
+    <link rel="stylesheet" href="index01.css">
+
+<!-- 내부스타일시트는 style 태그를 파일에 선언하고 사용 -->
+
+    <style>
+        p{color:yellow}
+        span{color:blue}
+    </style>
+
+<!-- 내부든 외부든 마지막 스타일시트, 마지막 속성이 적용된다 -->
+
+</head>
+<body>
+    
+<!-- 외부스타일시트:css파일을 만들고 참조 받는 형태 -->
+<!-- 내부스타일시트:내부에서 디자인 -->
+<p>css디자인</p>
+
+<span>디자인</span>
+
+<p>디자인</p>
+
+<!--인라인시트: 하나만 지정해서 스타일을 바꾸고 싶으면 style 태그를 쓴다 -->
+
+<p style="color:blueviolet; font-size: 20px;">인라인시트</p>
+
+
+</body>
+</html>

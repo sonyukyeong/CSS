@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap .inner {border: 1px solid #777;
+                      display: inline;
+                      width: 100px; /* 인라인요소는 박스 너비 지정X */
+                      height: 100px;
+                     }
+
+        .wrap span {display: block;}
+
+        .box {border: 1px solid #777;
+              display: inline-block; /* 박스를 가로배치하고, 블럭 성질을 갖게함 */
+              width: 100px;  /* 그래서 박스 너비 지정O */
+              height: 100px;
+            }
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+    </div>
+
+    <div class="wrap">
+        <span>박스</span>
+        <span>박스</span>
+        <span>박스</span>
+        <span>박스</span>
+    </div>
+
+    <div class="box">
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+    </div>
+
+    <div class="content" style="display: none;">안보이게 하기!</div>
+
+
+    <style>
+                ul, li{list-style: none; padding: 0; margin: 0;}
+        .gnb {text-align: center;}
+        .gnb > li {display: inline-block;}/*박스크기 지정 가능하게*/
+        .gnb > li > a{display:block;
+                      width: 50px;
+                      height: 50px;
+                      line-height: 50px;
+                      text-align: center;
+                      font-size: 18px;
+                      color: #000;
+                      text-decoration: none;/*밑줄 없애기*/}
+        .gnb > li > a:hover {background-color: #e3e3e3;}
+    </style>
+
+
+
+    <ul class="gnb">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+    </ul>
+</body>
+</html>

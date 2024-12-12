@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- form 태그는 사용자가 입력한 값을 그대로 서버에 전송할 때 사용 -->
+<!-- input:입력칸, placeholder: 힌트 -->
+
+<form action="주소">
+    <h3>회원가입 양식</h3>
+    <hr>
+
+    아아디: <input type="text" size="15" placeholder="아이디를 입력하세요">
+    <br>
+    비밀번호: <input type="password">
+    <br>
+    생년월일: <input type="date">
+    <br>
+    내 용돈: <input type="number">
+    <br>
+    <!-- checkbox, radio, select
+     세 속성은 동일한 name을 지정해서 반드시 하나의 그룹으로 묶어줘야한다. -->
+    관심분야: 
+    <input type="checkbox" name="inter">java
+    <input type="checkbox" name="inter">css
+    <input type="checkbox" name="inter">html
+    <input type="checkbox" name="inter">js
+    <br>
+    전공:
+    <input type="radio" name="major">경영학과
+    <input type="radio" name="major">컴퓨터공학과
+    <input type="radio" name="major">기계공학과
+    <input type="radio" name="major">수학과
+    <br>
+    지역:
+    <select name="region">
+        <option>서울시</option>
+        <option>경기도</option>
+        <option>부산시</option>
+        <option>인천시</option>
+    </select>
+    <br>
+
+    자기소개:
+    <textarea></textarea>
+    <textarea rows="5" cols="30"></textarea>
+    <br>
+    <!--submit: form안에 action 속성에 위치로 데이터를 전송
+        value: 기본값, button: 자바를 활용해야 나옴 -->
+    <input type="submit" value="전송하기">
+    <input type="reset" value="지우기">
+    <input type="button" value="눌러도 안나와요"
+</form>
+
+</body>
+</html>

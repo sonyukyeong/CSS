@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css적용 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 제이쿼리 링크 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- 부트스트랩 js 적용 -->
+     <script src="js/bootstrap.js"></script>
+
+    <!-- 이 3가지는 필수 -->
+
+
+
+    <!-- 이제 내가 커스텀 할 디자인을 넣어서 사용 -->
+
+
+</head>
+<body>
+    
+    <h3>버튼 모음</h3>
+
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default btn-lg">Default</button>
+
+    .btn-lg
+    .btn-sm
+    .btn-xs
+
+    <h3>테이블</h3>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <h3> 입력 양식 </h3>
+
+    <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" id="usr">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+
+
+      <!-- 그리드(반응형 영역 칸) -->
+       <!-- 규칙 container or container-fluid 아래에 row를 넣어줍니다.
+            col-xx-xx 클래스를 넣어서 디바이스 크기 영역을 잡습니다 -->
+
+    <div class="container"> <!-- 양쪽 여백을 남기고 가운데 -->
+      <!-- 한줄에 무조건 12칸! -->
+        <!-- 브라우저 크기 4칸(3) 영역, 모바일 환경에서는 2칸(6) 영역 나누기 총 12칸 > ex) 4칸 나눌려면 12/4=3 > col-sm-3 -->
+         <div class="row">
+            <div class="col-sm-3 col-xs-6">1</div>
+            <div class="col-sm-3 col-xs-6">2</div>
+            <div class="col-sm-3 col-xs-6">3</div>
+            <div class="col-sm-3 col-xs-6">4</div>
+         </div>
+    </div>
+
+
+<div class="container-fluid"></div> <!-- container-fluid 전체화면을 다 사용 -->
+<!-- 브라우저 크기 4칸(3) 영역, 모바일 환경에서는 2칸(6) 영역 나누기 총 12칸 > ex) 4칸 나눌려면 12/4=3 > col-sm-3 -->
+<div class="row">
+    <div class="col-sm-3 col-xs-6">1</div>
+    <div class="col-sm-3 col-xs-6">2</div>
+    <div class="col-sm-3 col-xs-6">3</div>
+    <div class="col-sm-3 col-xs-6">4</div>
+ </div>
+
+ <hr>
+
+ <div class="container">
+    <!-- 모바일(xs)에서 2칸, 테블릿에서 3칸(sm~md), 브라우저(md~lg) 6칸 -->
+    <ul class="row">
+        <li class="col-md-2 col-sm-4 col-xs-6">2</li>
+        <li class="col-md-2 col-sm-4 col-xs-6">2</li>
+        <li class="col-md-2 col-sm-4 col-xs-6">2</li>
+        <li class="col-md-2 col-sm-4 col-xs-6">1</li>
+    </ul>
+ </div>
+
+ <hr>
+  <div class="container">
+ <!-- 모바일 1칸, 테블릿 4칸, 브라우저 6칸 -->
+    <ul class="row">
+        <li class="col-md-2 col-sm-3 col-xs-12">1</li><!-- xs 1칸은 안적어도됨 근데 12적어도 정상 출력됨 -->
+        <li class="col-md-2 col-sm-3">1</li>
+        <li class="col-md-2 col-sm-3">1</li>
+        <li class="col-md-2 col-sm-3">1</li>
+        <li class="col-md-2 col-sm-3">1</li>
+        <li class="col-md-2 col-sm-3">1</li>
+    </ul>
+</div>
+
+<hr>
+
+<h3>모달창</h3> 
+
+    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>

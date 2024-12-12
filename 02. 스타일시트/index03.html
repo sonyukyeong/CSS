@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*:hover 마우스 올렸을때 */
+        .list > li > a:hover {color: yellow;}
+        /* :active 마우스로 눌렀을때 */
+        .inner:active {color: red;}
+
+        .name:focus{border: 1px solid red; outline: none;}
+        .confirm{width: 30px; height: 30px;}
+        .confirm:checked{appearance: none; /* 기본 디자인을 지우는 태그, 처음부터 수동으로 디자인 해야함 */
+                        border: 1px solid red; 
+                        outline: none;}
+    </style>
+
+</head>
+<body>
+    
+    <ui class="list">
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+    </ui>
+
+    <div class="inner">엑티브 가상선택자</div>
+
+    <input type="text" class="name">
+    <input type="checkbox" class="confirm">확인
+</body>
+</html>

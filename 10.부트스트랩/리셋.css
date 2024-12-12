@@ -1,0 +1,23 @@
+/* 협업을 할때 공통적으로 사용하는 CSS 넣어주기 */
+
+/* 폰트 (구글폰트에서 다운받아도됨) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+html, body {
+    font-family: "Noto Sans KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
+    width: 100%; /* 전체 영역 채우기 */
+    min-width: 300px; /* 최소 너비 고정 300이하로 떨어지지 않는다 */
+  }
+
+  /* 기본 세팅 */
+  *{padding: 0; margin: 0; box-sizing: border-box;} /*패딩,보더는 바디에x(위에) */
+  ul, li, ol, dd, dl {list-style: none;}
+  img {height: auto; max-width: 100%;}
+
+
+/* 구글, 사파리, 파이어폭스는 기본 태그들이 디자인이 조금씩 다른 경우가 있음 */
+/* input[type=checkbox], input[type=radio] {appearance: none; -moz-appearance: none; -webkit-appearance: none;} 각 사이트들의 기본 태그들을 지워버림 */
+/* 그리고 인풋태그 디자인하기 */

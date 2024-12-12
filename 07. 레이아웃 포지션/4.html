@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .replay {
+                border: 1px solid #777;
+                width: 700px;
+                margin: 0 auto;
+                position: relative; 
+                padding: 10px;} 
+        .replay > img {position: absolute; top: 10px; left: 10px; width: 80px;}
+        .content {padding-left: 90px; overflow: hidden;}/* 10 + 10 + 80 이라서 100 정도 줬는데, padding 10이 늘어나서 숫자 조절 필요  */
+        .content > textarea {width: 100%; box-sizing: border-box; /*전체 영역의 100% 주되, 튀어나가지 않게 잡아줌*/
+                            min-height: 150px; /*최소 너비, 150이하로는 떨어지지 않는다*/
+                            padding: 10px;
+                            resize: vertical;/*상자 크키가 마우스로 조절 안되게 고정*/}
+        .content > .left {float: left;} /* 부모에 hidden을 줘야 망가지지 않음 */
+        .content > .left > input {display: block; padding: 10px;}
+        .content > .right {float: right;}
+        
+    </style>
+
+
+</head>
+<body>
+
+    <div class="replay">
+        <img src="/07. 레이아웃 포지션/img/bgimg.png" alt="">
+        <div class="content">
+            <textarea></textarea>
+            <div class="left">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button class="right">등록버튼</button>
+        </div>
+    </div>
+
+</body>
+</html>

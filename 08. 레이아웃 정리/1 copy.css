@@ -1,0 +1,76 @@
+*{padding: 0; margin: 0;}
+ul li{list-style: none;}
+a{text-decoration: none; color: black;}/*모든 a영역에 적용*/
+
+/*상단 (그림 위)*/
+
+/*고정*/ header {position: fixed; left: 0; top: 0; width: 100%; background-color: white;}
+
+header > h1 {text-align: center; margin: 20px 0;}
+
+.social {overflow: hidden; position: absolute;}
+.social > li {width: 32px; height: 32px; 
+             background-image: url(images/social.png); 
+             text-indent: 9999px; /*들여쓰기: 9999px줘서 아예 안보이는 영역으로 보내버림*/
+             float: left; /*display를 쓰게 되면 사이에 여백이 생기기 때문에 float 사용*/}             
+.social > li:nth-child(2) {background-position: -32px 0;}
+.social > li:nth-child(3) {background-position: -64px 0;}
+.social > li:nth-child(4) {background-position: -96px 0;}
+
+.login {position: absolute; top: 10px;/*위*/ right: 10px;/*오른쪽*/
+        overflow: hidden;}
+.login > li {float:left; font-size: 12px;}
+.login > li:nth-child(2) {padding: 20px;} 
+
+.menu {text-align: center; margin-top: 30px;}
+.menu > ul > li {display: inline-block;/*가로배치*/ }
+.menu > ul > li > a {display: block; 
+                    font-size: 12px;
+                    padding: 20px 30px;/*여백만들기*/}
+
+/*중간 (그림)*/
+
+.article {height: 500px;
+         background-image: url(images/main.jpg);
+         background-repeat: no-repeat; /*반복: 반복을 안함 > 잘림 > size 적용 */
+         background-size: cover;/*빈공간 없이 채움*/
+         background-position: center;
+         border-top: 3px solid red; /*위에 선*/
+         text-align: center;
+         margin-top: 160px;/*가려지는게 아니라 말려들어가야하니깐 여백을 줌*/}
+
+.article > p:nth-child(1)/*1번째 p태그란 뜻*/
+                        {text-align: center; 
+                        font-size: 50px; 
+                        color: white; 
+                        padding-top: 100px; 
+                        letter-spacing: 10px;/*자간*/}
+.article > p:nth-child(2) {text-align: center; 
+                        font-size: 25px; 
+                        color: white; 
+                        padding-top: 50px; 
+                        letter-spacing: 10px;}
+
+/*아래 (그림 밑에)*/
+.section {text-align: center; margin-bottom: 10px;}
+
+.main-title {text-align: center; 
+            font-size: 12px; 
+            padding: 10px 0; 
+            border-bottom: 3px dashed #ddd;}
+.main-list {text-align: center;}
+.main-list li {display: inline-block; /*inline 도 가능*/ 
+              padding: 40px;}
+.main-list > li > p {display:block; color: #ddd;}           
+
+/* 맨 아래 */
+footer {padding: 0 20px; 
+        overflow: hidden; 
+        border-top: 2px solid #ddd;/*위에 줄*/
+        height: 40px;
+        line-height: 40px;}
+footer > h3 {float: left; font-size: 15px;}
+footer > p {float: right; font-size: 15px;}
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellow; padding: 10px;}
+        .box >.item {background-color: green; width: 50px; height: 50px;}
+    
+
+    .container {display: flex;}
+
+    .item1 {flex-grow: 1;}
+    .item2 {flex-grow: 2;}
+    .item3 {flex-grow: 3;}
+
+    
+    .item4 {flex-grow: 1;
+            flex-shrink: 3;}
+    .item5 {flex-grow: 2;
+            flex-shrink: 2;}
+    .item6 {flex-grow: 3;
+            flex-shrink: 1;}
+    
+    .item7 {flex-basis: 20%;}
+    .item8 {flex-basis: 30%;}
+    .item9 {flex-basis: 50%;}/* 기본너비-auto 기본값(width or height) */
+
+    </style>
+       
+
+</head>
+<body>
+
+
+    <h3>flex-grow</h3><!-- 아이템 각각에다가 적용. 화면 늘릴때 더 빨리 증가 한다. -->
+        
+
+    <div class="container box">
+        <div class="item1">hello</div>
+        <div class="item2">world</div>
+        <div class="item3">flex</div>        
+    </div>
+
+    <br>
+
+    <h3>flex-shrink</h3><!-- 박스 크기가 지정 되어 있으면 영향을 받아 줄어드는게 보임. 영향 받는게 많아 계산하기 어려워 많이 안씀. -->
+
+    <div class="container box">
+        <div class="item4">hello</div>
+        <div class="item5">world</div>
+        <div class="item6">flex</div>        
+    </div>
+
+    <br>
+
+    <h3>flex-basis</h3><!-- width or height로 대체가능 -->
+
+    <div class="container box">
+        <div class="item7">hello</div>
+        <div class="item8">world</div>
+        <div class="item9">flex</div>        
+    </div>
+    
+</body>
+</html>

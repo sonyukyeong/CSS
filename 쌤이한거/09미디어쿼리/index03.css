@@ -1,0 +1,109 @@
+* {margin: 0; padding: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none; }
+img {height: auto; max-width: 100%;}
+
+/* 웹 디자인 */
+@media(min-width: 767px) {
+    #wrap {
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid #e3e3e3;
+    }
+    .logo {
+        height: 280px;
+
+
+        background: url(images/bg.png);
+
+    }
+    .logo > h1 {
+        color: #ffff00;
+        font-size: 30px;
+        padding: 20px;
+    }
+    .gnb {
+        background-color: #c10000;
+    }
+    .gnb ul li {
+        display: inline-block;
+    }
+    .gnb ul li a {
+        display: block;
+        color: #fff;
+        padding: 20px 30px;
+    }
+    .gnb ul li a:hover {
+        background-color: #903;
+    }
+
+    /* 섹션 */
+    .box {
+        overflow: hidden;
+    }
+    .box > .left {
+        float: left;
+        width: 700px;
+        padding: 20px 10px 10px 0;
+
+    }
+    .box > .right {
+        float: right;
+        width: 200px;
+        padding: 10px;
+        background-color: #e3e3e3;
+        height: 500px;
+    }
+
+    .footer {
+        background-color: #222222;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+    }
+}
+
+/* 모바일 환경 디자인 */
+@media(max-width:766px) {
+    #wrap {
+        /* width: 100%; */
+        min-width: 350px; /* 최소너비가 350이고 이상부터는 가변 */
+    }
+    .logo {
+        height: 250px;
+        background-image: url('images/bg.png');
+    }
+    .logo > h1 {
+        color: #ffff00;
+        font-size: 30px;
+        padding: 20px;
+    }
+    .gnb {
+        background-color: #c10000;
+    }
+    .gnb ul li a {
+        display: block;
+        padding: 7px;
+        text-align: center;
+        color:#fff;
+    }
+    .gnb ul li a:hover {
+        background-color: #903;
+    }
+    .box > .left {
+        padding: 20px;
+    }
+    .box > .right {
+        padding: 20px;
+    }
+    .box > .right > img {
+        width: 100%;
+    }
+    .footer {
+        background-color: #222222;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+    }
+
+}

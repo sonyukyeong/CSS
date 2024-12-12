@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {  overflow: hidden; 
+                width: 80%; 
+                border: 1px solid#777; 
+                margin: 0 auto;}
+
+        .container > .col-lg-6 {float: left;}
+
+
+
+        /* 1240이상에서 동작 .col-lg-6:6박스를 만들겠음*/@media(min-width:1240px) { .container > .col-lg-6{ width: 16.6666%;}}
+
+        /* 797이상 1239이하에서 동작 */@media(min-width:767px) and (max-width:1239px) {.container > .col-md-4{width: 25%;}}
+        
+        /* 766이하에서 동작 */@media(min-width:766px) { .container > .col-xs-2 {width: 50%;}}
+    </style>
+
+</head>
+<body>
+    
+    <h3>미디어쿼리 박스 배치</h3>
+
+    <p> 웹환경 - 박스6개, 테블릿 - 박스4개, 모바일 - 박스2개</p>
+
+    <div class="container">
+                              <div class="col-lg-6 col-md-4 col-xs-2">박스</div>
+<!-- 3가지를 다 줄 수도 있음 --><div class="col-lg-6 col-md-4 col-xs-2">박스</div>
+                               <div class="col-lg-6 col-md-4 col-xs-2">박스</div>
+    </div>
+
+<!-- cn + f : 찾기 > 옆에 화살표 눌러서 바꿀 수도 있음 -->
+
+</body>
+</html>
